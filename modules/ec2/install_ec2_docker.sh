@@ -1,4 +1,6 @@
 #!/bin/bash
-yum update -y -q
-yum install ec2-instance-connect
-#amazon-linux-extras install postgresql9.6
+sudo yum update -y
+sudo yum install docker -y
+sudo service docker start
+sudo usermod -a -G docker ec2-user
+

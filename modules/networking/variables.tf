@@ -1,8 +1,3 @@
-variable "rds_port" {
-  type = string
-}
-
-# REPLACE IF YOU HAVE MULTIPLE SETUPS IN ONE ACCOUNT
 
 variable "cidr" {
   type    = string
@@ -24,10 +19,4 @@ variable "database_subnets" {
   default = ["10.1.11.0/24", "10.1.12.0/24", "10.1.13.0/24"]
 }
 
-variable "container_port_backend" {
-  type = number
-}
 
-variable "container_port_frontend" {
-  type = number
-}
